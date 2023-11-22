@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
+
+*{
+    font-family: 'KoHo', sans-serif;
+}
+
+
+h1{
+    text-shadow: 0 0 3px #000;
+    color: #706233;
+}
+
+body{
+    animation: appear 3s linear;
+    transition: ease-in 2s;
+}
+
+#main-container{
+    width: auto;
+    background-color: #B0926A;
+    border-radius: 25px;
+    box-shadow: 0 0 16px #000;
+}
+
+#inputs input{
+    box-shadow: 0 0 5px #000;
+}
+
+#minutes2{
+    display: none;
+}
+
+button{
+    box-shadow: 0 0 4px #000;
+}
+
+button:hover{
+    background-color: #212932a6;
+    box-shadow: 0 0 8px #000;
+}
+
+
+@media screen and (max-width: 560px) {
+    #main-container{
+        width: 100%;
+    }
+    #inputGroup-sizing-lg{
+        display: none;
+    }
+    #textInput{
+        width: 100%;
+        border-radius: 15px;
+    }
+    #minutes2{
+        display: flex;
+        padding-left: 2%;
+        padding-bottom: 7%;
+        font-weight: bolder;
+        font-size: 19px;
+        color: #fff;
+        text-shadow: 0 0 5px #000;
+        width: 100%;
+    }
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

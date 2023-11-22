@@ -13,15 +13,18 @@
     <div class="container my-5 py-5 w-50" id="main-container">
         <h1 class="display-5 text-center p-5 my-3">Calculate the Area of a Triangle</h1>
         <div id="inputs">
-            <div class="input-group input-group-lg p-5">
+            <div id="big-screen" class="input-group input-group-lg p-5">
                 <input type="text" id="baseInput" class="form-control" placeholder="What is the Base (in cm)" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                 <input type="text" id="heightInput" class="form-control" placeholder="What is the Height (in cm)" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            </div>
+            <div id="smll-screen">
+                <input type="text" id="baseInput" class="form-control my-2" placeholder="What is the Base (in cm)" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <input type="text" id="heightInput" class="form-control my-3" placeholder="What is the Height (in cm)" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
             </div>
             <div class="d-flex justify-content-evenly pb-3">
                 <button type="button" id="btn" class="btn btn-primary btn-lg">Convert</button>
                 <button class="btn btn-danger btn-lg" type="reset" data-clear>Clear All</button>
             </div>
-        </div>
         <div class="text-center">
             <h3 class="display-5 text-light fw-semibold">The Area is:</h3>
             <p data-output-value class="display-3"></p>
